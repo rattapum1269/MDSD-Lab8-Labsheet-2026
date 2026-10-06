@@ -1072,10 +1072,19 @@ items: const [
 > ⚠️ `IndexedStack` อ้างอิง index ตามตำแหน่งใน List `pages` และ `BottomNavigationBarItem` ต้องมีจำนวนเท่ากับ `pages` เสมอ (ตอนนี้ต้องเป็น 3 ทั้งคู่) ถ้าจำนวนไม่ตรงกันแอปจะ Error ทันทีตอนรัน ไม่ใช่แค่แสดงผลผิด
 
 > ✅ **Checkpoint 4.1** รันแอปแล้วทดสอบ: (ก) กดหัวใจที่สินค้า 3 ชิ้นจากหน้า Home (ข) สลับไป Tab "รายการโปรด" เห็นครบทั้ง 3 ชิ้น (ค) ปิดแอปให้สนิท (Force Stop หรือปัดออกจาก Recent Apps) แล้วเปิดใหม่ กลับไปที่ Tab รายการโปรดอีกครั้ง ถ่ายภาพหน้าจอ (ข) และ (ค) เทียบกัน ต้องแสดงรายการเดิมครบทุกชิ้น พร้อมทดสอบกดลบ (Remove) 1 ชิ้น แล้วปิดเปิดแอปใหม่อีกครั้งเพื่อยืนยันว่าการลบก็ถูกบันทึกถาวรเช่นกัน (ง) กลับไปหน้า Home แล้วกดหัวใจซ้ำที่สินค้าชิ้นเดิมอีกครั้ง (ชิ้นที่ยังไม่ได้ลบ) แล้วตรวจสอบที่ Tab รายการโปรดว่ายังแสดงสินค้าชิ้นนั้นแค่แถวเดียว ไม่ซ้ำเป็น 2 แถว และแอปไม่ Error
+# ก
+<img width="1080" height="2400" alt="Screenshot_20261006_162016 (1)" src="https://github.com/user-attachments/assets/e76a41e2-e622-41d3-983e-9e6c7cd8c581" />
+# ข
+<img width="1080" height="2400" alt="Screenshot_20261006_203757 (1)" src="https://github.com/user-attachments/assets/9509be51-fefe-47b2-8b5b-4ac1f3e9d6a6" />
+<img width="1080" height="2400" alt="Screenshot_20261006_162009 (1)" src="https://github.com/user-attachments/assets/c9e92544-d95f-49cf-a56e-05d69d49dfb0" />
 
-```text
-บันทึกผลลัพธ์ที่นี่
-```
+# ค
+<img width="1080" height="2400" alt="Screenshot_20261006_204314" src="https://github.com/user-attachments/assets/f0d0effe-12b4-4002-9406-54389babfd69" />
+<img width="1080" height="2400" alt="Screenshot_20261006_203827 (1)" src="https://github.com/user-attachments/assets/d56563d1-f16b-47b5-9837-e93dd84829ee" />
+
+# ง
+<img width="1080" height="2400" alt="Screenshot_20261006_204430" src="https://github.com/user-attachments/assets/52e784e4-ddca-406f-a552-11ab7a704ac4" />
+<img width="1080" height="2400" alt="Screenshot_20261006_204426" src="https://github.com/user-attachments/assets/6aa8198c-7372-4e37-8a94-b18c4cf1e3f6" />
 
 ---
 
@@ -1123,9 +1132,14 @@ class SellItemPage extends StatefulWidget {
 
 > ✅ **Checkpoint 5.1** รันแอปแล้วทำตามลำดับนี้: 1. สร้างร่างประกาศใหม่ผ่าน Tab "ลงประกาศขาย" ด้วยความช่วยเหลือของ AI เหมือนสัปดาห์ที่ 7 2. กดยืนยันร่าง 3. กดปุ่มไอคอนเข้าหน้า "ร่างประกาศของฉัน" แล้วเห็นร่างที่เพิ่งสร้าง 4. ปิดแอปให้สนิทแล้วเปิดใหม่ กลับเข้าหน้า "ร่างประกาศของฉัน" อีกครั้ง ถ่ายภาพหน้าจอทั้ง 4 ขั้นตอนนี้แนบส่ง เพื่อพิสูจน์ว่าร่างไม่หายไปแม้ปิดแอปแล้ว 
 
-```text
-บันทึกผลลัพธ์ที่นี่
-```
+1
+<img width="1080" height="2400" alt="Screenshot_20261006_210357" src="https://github.com/user-attachments/assets/880fb828-dfb4-4a61-b145-38163388e09f" />
+2
+<img width="1080" height="2400" alt="Screenshot_20261006_210404" src="https://github.com/user-attachments/assets/85918572-2128-4dce-9043-244dd31ff273" />
+3
+<img width="1080" height="2400" alt="Screenshot_20261006_210414" src="https://github.com/user-attachments/assets/6a57d3fc-82d1-48dc-bc12-79bad55a0f88" />
+4
+<img width="1080" height="2400" alt="Screenshot_20261006_210534" src="https://github.com/user-attachments/assets/7dee1da3-5ece-4a8e-acd5-4a784117b2b5" />
 
 ---
 
@@ -1137,9 +1151,9 @@ class SellItemPage extends StatefulWidget {
 
 > ✅ **Checkpoint 6.1** ถ่ายภาพหน้าจอที่แสดงให้เห็นว่า Tab รายการโปรดและหน้าร่างประกาศยังคงแสดงข้อมูลได้ตามปกติแม้ไม่มีอินเทอร์เน็ตเลย (ส่วน Tab หน้าหลักที่ดึงจาก Fake Store API คาดว่าจะแสดง Error ตามปกติ เพราะยังไม่ได้ทำ Local Cache ให้หน้านั้น) 
 
-```text
-บันทึกผลลัพธ์ที่นี่
-```
+<img width="1080" height="2400" alt="Screenshot_20261006_210957" src="https://github.com/user-attachments/assets/2365288e-09c0-4b06-842f-e1d114ed7181" />
+<img width="1080" height="2400" alt="Screenshot_20261006_210950" src="https://github.com/user-attachments/assets/44e19ec5-4cde-4598-a22f-5e58fb81ee04" />
+
 
 ---
 
